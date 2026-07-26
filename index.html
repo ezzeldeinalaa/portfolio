@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ezz Eldein Alaa — Biochemistry &amp; Science Communication</title>
+
+<!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-en.css">
+</head>
+<body>
+
+<!-- Ambient canvas backdrop -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- Custom cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-nav" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">
+      <span class="brand-mark">EE</span>
+      <span class="brand-full d-none d-md-inline">Ezz Eldein Alaa</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certs">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link btn-cv-nav" href="#cv-section">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero" class="hero-section">
+  <div id="molecule-canvas" class="molecule-canvas"></div>
+  <div class="hero-noise"></div>
+
+  <div class="container hero-content">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <div class="eyebrow reveal-up">
+          <span class="pulse-dot"></span>
+          Biochemistry Undergraduate — Ain Shams University
+        </div>
+        <h1 class="hero-title reveal-up delay-1">
+          I turn <span class="hl-molecule">chemical reactions</span><br>
+          into stories anyone can follow
+        </h1>
+        <p class="hero-sub reveal-up delay-2">
+          Ezz Eldein Alaa Ahmed — a Biochemistry undergraduate with a 3.418 CGPA,
+          driven to translate complex scientific concepts into engaging content
+          for wide audiences, moving between the bench and the edit suite.
+        </p>
+        <div class="hero-actions reveal-up delay-3">
+          <a href="#cv-section" class="btn btn-flask btn-lg">
+            <i class="fa-solid fa-flask"></i>
+            View Resume
+          </a>
+          <a href="#contact" class="btn btn-outline-flask btn-lg">
+            Get in touch
+            <i class="fa-solid fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats reveal-up delay-4">
+          <div class="stat">
+            <span class="stat-num" data-count="3.418">0.00</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">Languages</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 order-first order-lg-last mb-5 mb-lg-0">
+        <div class="photo-frame reveal-up delay-2">
+          <div class="photo-slot" id="photoSlot">
+            <img src="ezz.jpeg" alt="Ezz Eldein Alaa">
+          </div>
+          <div class="frame-ring ring-1"></div>
+          <div class="frame-ring ring-2"></div>
+          <span class="frame-tag">EZZ ELDEIN · CAIRO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll down</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <p class="section-eyebrow reveal-up">01 — About</p>
+        <h2 class="section-title reveal-up">From the bench<br>to the screen</h2>
+      </div>
+      <div class="col-lg-7 offset-lg-1">
+        <p class="about-text reveal-up">
+          A Biochemistry undergraduate at Ain Shams University with a 3.418/4.00
+          CGPA, expected to graduate in June 2026. I bring a strong foundation
+          in life sciences and data analysis, paired with a proven ability to
+          simplify complex scientific concepts into engaging content through
+          live presentations and digital media.
+        </p>
+        <p class="about-text reveal-up">
+          I'm looking to bring my scientific expertise and cross-cultural
+          communication skills to a role that blends science education,
+          laboratory work, or content creation.
+        </p>
+        <div class="about-tags reveal-up">
+          <span class="tag-pill">Biochemistry</span>
+          <span class="tag-pill">Science Communication</span>
+          <span class="tag-pill">Video Editing</span>
+          <span class="tag-pill">Lab Analysis</span>
+          <span class="tag-pill">Data Tracking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section-block section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">02 — Academic Path</p>
+    <h2 class="section-title reveal-up mb-5">Education</h2>
+
+    <div class="edu-card reveal-up">
+      <div class="edu-glow"></div>
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <span class="edu-period">September 2024 — Present</span>
+          <h3 class="edu-degree">Bachelor of Science in Biochemistry</h3>
+          <p class="edu-place"><i class="fa-solid fa-location-dot"></i> Ain Shams University, Cairo</p>
+          <p class="edu-courses">
+            Relevant coursework: Industrial Processes, Plant Biology,
+            Thermodynamics &amp; Electrochemistry, Medical Laboratory Sciences.
+          </p>
+        </div>
+        <div class="col-md-4 text-md-center">
+          <div class="gpa-ring">
+            <svg viewBox="0 0 120 120" class="gpa-svg">
+              <circle cx="60" cy="60" r="52" class="gpa-track"></circle>
+              <circle cx="60" cy="60" r="52" class="gpa-fill" id="gpaCircle"></circle>
+            </svg>
+            <div class="gpa-value">
+              <span>3.418</span>
+              <small>/ 4.00</small>
+            </div>
+          </div>
+          <p class="gpa-caption">Expected graduation June 2028</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section-block">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">03 — Volunteer &amp; Extracurricular</p>
+    <h2 class="section-title reveal-up mb-5">Experience</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal-up">
+        <div class="timeline-marker"><i class="fa-solid fa-clapperboard"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">September 2025 — Present</span>
+          <h3>Media Center Member</h3>
+          <p class="timeline-org">Ain Shams University Student Union</p>
+          <ul class="timeline-list">
+            <li>Produce and edit engaging multimedia content, including educational videos and digital graphics, to drive university communication and student initiatives.</li>
+            <li>Execute end-to-end media projects by applying advanced video editing and graphic design skills, significantly enhancing the visual impact of student union campaigns.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-marker"><i class="fa-solid fa-bullhorn"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2026</span>
+          <h3>Marketing Track Volunteer</h3>
+          <p class="timeline-org">ASU Career Center — 5th Ain Shams University Career EXPO</p>
+          <ul class="timeline-list">
+            <li>Executed targeted marketing strategies and creative efforts for the largest career fair at Ain Shams University, driving student attendance and engagement.</li>
+            <li>Dedicated 20+ hours to event promotion, logistics, and crowd management, demonstrating proactive leadership and effective teamwork in a large-scale event setting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section-block section-alt">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">04 — Tools &amp; Skills</p>
+    <h2 class="section-title reveal-up mb-5">Skills</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card reveal-up">
+          <i class="fa-solid fa-microphone-lines skill-icon"></i>
+          <h4>Science Comm.</h4>
+          <ul>
+            <li>Oral Presentations</li>
+            <li>Educational Content Scripting</li>
+            <li>Curriculum Simplification</li>
+            <li>Science Writing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card reveal-up">
+          <i class="fa-solid fa-flask-vial skill-icon"></i>
+          <h4>Laboratory</h4>
+          <ul>
+            <li>Analytical Techniques</li>
+            <li>Titration (Acid &amp; Peroxide Value)</li>
+            <li>Enzyme Kinetics</li>
+            <li>Chemical Kinetics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card reveal-up">
+          <i class="fa-solid fa-chart-line skill-icon"></i>
+          <h4>Data &amp; Technical</h4>
+          <ul>
+            <li>Microsoft Excel (Advanced)</li>
+            <li>Data Entry &amp; Tracking</li>
+            <li>Computer Proficiency</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card reveal-up">
+          <i class="fa-solid fa-clapperboard skill-icon"></i>
+          <h4>Digital &amp; Creative</h4>
+          <ul>
+            <li>Video Editing &amp; Montage</li>
+            <li>Graphic Design</li>
+            <li>Digital Asset Creation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 g-4">
+      <div class="col-12">
+        <div class="lang-bar reveal-up">
+          <div class="lang-item">
+            <span class="lang-name"><i class="fa-solid fa-language"></i> English</span>
+            <div class="lang-track"><div class="lang-fill" data-width="90"></div></div>
+            <span class="lang-level">Advanced</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name"><i class="fa-solid fa-language"></i> Spanish</span>
+            <div class="lang-track"><div class="lang-fill" data-width="30"></div></div>
+            <span class="lang-level">Elementary</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS + WEBINARS -->
+<section id="certs" class="section-block">
+  <div class="container">
+    <p class="section-eyebrow reveal-up">05 — Continuous Learning</p>
+    <h2 class="section-title reveal-up mb-5">Certifications &amp; Scientific Sessions</h2>
+
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="cert-item reveal-up">
+          <i class="fa-solid fa-heart-pulse cert-icon"></i>
+          <div>
+            <h5>Basic Life Support (BLS) &amp; CPR</h5>
+            <span>Suez Medical Syndicate — Accredited by Middle East Paramedics · 2024</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="cert-item reveal-up">
+          <i class="fa-solid fa-robot cert-icon"></i>
+          <div>
+            <h5>Boost Your Productivity with AI</h5>
+            <span>Maharat min Google / Injaz Egypt · 2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="cert-item reveal-up">
+          <i class="fa-solid fa-microscope cert-icon"></i>
+          <div>
+            <h5>Medical Analysis Workshop</h5>
+            <span>Central Laboratory, Faculty of Science, Ain Shams University · August 2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="cert-item reveal-up">
+          <i class="fa-solid fa-shield-halved cert-icon"></i>
+          <div>
+            <h5>Process Safety Management in Chemical Industries</h5>
+            <span>Egyptian Society of Analytical Chemistry · May 2025</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="cert-item reveal-up">
+          <i class="fa-solid fa-award cert-icon"></i>
+          <div>
+            <h5>Quality Assurance Workshop</h5>
+            <span>Quality Assurance &amp; Accreditation Center, Ain Shams University · January 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="cert-item reveal-up">
+          <i class="fa-solid fa-book-medical cert-icon"></i>
+          <div>
+            <h5>Medical Laboratory Sciences</h5>
+            <span>Online Course · 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="webinar-strip reveal-up">
+      <div class="webinar-chip">
+        <i class="fa-solid fa-dna"></i>
+        <span>MIR Initiative — Introduction to Nuclear Medicine Biotechnology from A to Z, Microbiome Dynamics <em>(April – May 2026)</em></span>
+      </div>
+      <div class="webinar-chip">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>Engineering Tracks — Supply Chain Overview <em>(March 2026)</em></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CV SECTION -->
+<section id="cv-section" class="section-block section-cv">
+  <div class="container text-center">
+    <p class="section-eyebrow reveal-up justify-content-center">06 — Resume</p>
+    <h2 class="section-title reveal-up mb-3">View my full resume</h2>
+    <p class="cv-sub reveal-up">Click the button below to view a full, downloadable copy of my resume.</p>
+
+    <button class="btn btn-flask btn-xl reveal-up" id="showCvBtn" data-bs-toggle="modal" data-bs-target="#cvModal">
+      <i class="fa-solid fa-file-lines"></i>
+      View Resume (CV)
+    </button>
+  </div>
+</section>
+
+<!-- CV MODAL -->
+<div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content cv-modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cvModalLabel"><i class="fa-solid fa-file-pdf"></i> Ezz Eldein Alaa — CV</h5>
+        <div class="cv-modal-actions">
+          <a href="Ezz_Eldein_CV.pdf" download class="btn btn-flask btn-sm">
+            <i class="fa-solid fa-download"></i> Download
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="modal-body p-0">
+        <iframe src="Ezz_Eldein_CV.pdf" class="cv-iframe" title="Ezz Eldein CV"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<footer id="contact" class="footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <p class="section-eyebrow reveal-up">07 — Contact</p>
+        <h2 class="section-title reveal-up mb-4">Let's start a conversation</h2>
+        <p class="footer-text reveal-up">
+          Whether it's an opportunity in science education, laboratory work,
+          or content creation — I'd love to connect and learn more about
+          your team.
+        </p>
+        <a href="mailto:ezzeldeinalaaahmed@gmail.com" class="footer-email reveal-up">
+          ezzeldeinalaaahmed@gmail.com
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="col-lg-6 offset-lg-1">
+        <div class="row g-3 mt-lg-5 pt-lg-3">
+          <div class="col-sm-6">
+            <a href="mailto:ezzeldeinalaaahmed@gmail.com" class="contact-card reveal-up">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <strong>Gmail</strong>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="tel:+201061327554" class="contact-card reveal-up">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span>Call me</span>
+                <strong>+20 106 132 7554</strong>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="https://linkedin.com/in/ezz-eldein" target="_blank" rel="noopener" class="contact-card reveal-up">
+              <i class="fa-brands fa-linkedin"></i>
+              <div>
+                <span>LinkedIn</span>
+                <strong>ezz-eldein</strong>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <div class="contact-card contact-card-static reveal-up">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span>Location</span>
+                <strong>Cairo, Egypt</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Ezz Eldein Alaa Ahmed</span>
+      <span class="footer-tag">Biochemistry · Science Communication</span>
+      <span class="footer-credit">Fully coded by Mahmoud Wael</span>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
